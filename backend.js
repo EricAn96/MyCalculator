@@ -62,12 +62,17 @@ function enterNumber(num) {
           allClear()
      }
      // prevents 0 or decimal being used out of mathematical rules
-     if ((!enteredNum && num == 0) || (enteredNum.includes(".") && num == ".")){
+     if ((enteredNum == "0" && num == 0) || (enteredNum.includes(".") && num == ".")){
           return;
+     }
+
+     if (enteredNum == "0") {
+          enteredNum = ""
      }
      enteredNum += num;
      enteredNum = (enteredNum.charAt(0) == ".") ? "0" + enteredNum: enteredNum;
      updateDisplay();
+     console.log(enteredNum);
 };
 
 function updateDisplay() {
