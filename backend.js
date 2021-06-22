@@ -69,10 +69,10 @@ function enterNumber(num) {
      if (enteredNum == "0") {
           enteredNum = ""
      }
+
      enteredNum += num;
      enteredNum = (enteredNum.charAt(0) == ".") ? "0" + enteredNum: enteredNum;
      updateDisplay();
-     console.log(enteredNum);
 };
 
 function updateDisplay() {
@@ -114,8 +114,7 @@ function Calculate() {
      
      // removes all the brackets for negative numbers eg. (-6) to -6 and parse all number elements to float type
      let newEquation = [];
-     for (let i = 0; i < equation.length; i++) {
-          newEquation[i] = (equation[i].includes("(")) ? equation[i].substring(1, equation[i].length-1) : equation[i];
+     for (let i = 0; i < equation.length; i++) {newEquation[i] = (equation[i].includes("(")) ? equation[i].substring(1, equation[i].length-1) : equation[i];
           if (!isNaN(newEquation[i])){
                newEquation[i] = parseFloat(newEquation[i]);
           };
@@ -132,7 +131,7 @@ function Calculate() {
                } else if (newEquation[i] == " % ") {
                     num = newEquation[i-1] % newEquation[i+1];
                };
-               if (num) {
+               if (num || num == 0) {
                     newEquation.splice(i-1, 3, num);
                     break;
                };
@@ -148,13 +147,12 @@ function Calculate() {
                } else if (newEquation[i] == " - ") {
                     num = newEquation[i-1] - newEquation[i+1];
                };
-               if (num) {
+               if (num || num == 0) {
                     newEquation.splice(i-1, 3, num);
                     break;
                };
           };
      };
-
      totalNum = newEquation[0];
      document.getElementById("equals").innerHTML = `&nbsp;=`;
      document.getElementById("user-entry").innerHTML = totalNum;
