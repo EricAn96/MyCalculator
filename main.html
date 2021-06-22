@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+  <div class="calculator">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col equation-box">
+
+          <span id="equation"></span><span id="equals"></span>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col result-box">
+
+          <span id="sign"></span><p style="margin-bottom:0px" id="user-entry">0</p>
+
+        </div>
+      </div>
+
+      <div class="button-pad pulse">
+        <div class="row">
+          <div class="col btn-secondary" id="AC">
+            AC
+          </div>
+          <div class="col btn-secondary" id="P/M">
+            +/-
+          </div>
+          <div class="col btn-secondary" id="modulus">
+            %
+          </div>
+          <div class="col btn-secondary" id="divide">
+            ÷
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col btn-secondary" id="btn-7">
+            7
+          </div>
+          <div class="col btn-secondary" id="btn-8">
+            8
+          </div>
+          <div class="col btn-secondary" id="btn-9">
+            9
+          </div>
+          <div class="col btn-secondary" id="multiply">
+            ×
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col btn-secondary" id="btn-4">
+            4
+          </div>
+          <div class="col btn-secondary" id="btn-5">
+            5
+          </div>
+          <div class="col btn-secondary" id="btn-6">
+            6
+          </div>
+          <div class="col btn-secondary" id="minus">
+            -
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col btn-secondary" id="btn-1">
+            1
+          </div>
+          <div class="col btn-secondary" id="btn-2">
+            2
+          </div>
+          <div class="col btn-secondary" id="btn-3">
+            3
+          </div>
+          <div class="col btn-secondary" id="plus">
+            +
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col btn-secondary" id="dot">
+            .
+          </div>
+          <div class="col btn-secondary" id="btn-0">
+            0
+          </div>
+          <div class="col col-6 btn-secondary" id="equal">
+            =
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="backend.js"></script>
+</body>
+</html>
