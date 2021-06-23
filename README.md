@@ -1,8 +1,6 @@
 # MyCalculator
 
-Live Demo:
-
-        https://springcoooler.github.io/MyCalculator/
+Live Demo: https://springcoooler.github.io/MyCalculator/
 
 
 Functions:
