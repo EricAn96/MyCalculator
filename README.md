@@ -1,6 +1,6 @@
 # MyCalculator
 
-Live Demo: https://EricAn96.github.io/MyCalculator/
+Live Demo: https://erican96.github.io/MyCalculator/
 
 
 Functions:
